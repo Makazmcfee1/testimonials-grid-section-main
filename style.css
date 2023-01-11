@@ -26,21 +26,21 @@ body {
   --Lightgrayishblue: hsl(210, 46%, 95%);
 }
 
-#container {
+.container {
   padding: 5% 3%;
 }
-#header {
+.header {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
 }
-#image {
+.image {
   border-radius: 50%;
   margin-right: 0.8rem;
   height: 1.7rem;
   border: 1px solid purple;
 }
-#grad {
+.grad {
   opacity: 70%;
 }
 h2 {
@@ -52,9 +52,7 @@ h2 {
 h3 {
   opacity: 0.9;
 }
-quoteblock {
-  opacity: 80%;
-}
+
 #quote {
   position: absolute;
   top: 0%;
@@ -98,23 +96,26 @@ quoteblock {
 }
 
 @media (min-width: 375px) {
-  #container {
-    display: flex;
+  body {
     max-width: 1440px;
+    max-height: 900px;
+  }
+  .container {
+    display: flex;
     margin: 0 auto;
     justify-content: space-between;
   }
 
   #card5 {
-    flex-basis: 19%;
+    flex-basis: 20%;
   }
-  #main-left {
+  .main-left {
     display: flex;
     flex-direction: column;
-    flex-basis: 79%;
+    flex-basis: 78%;
   }
-  #top,
-  #bottom {
+  .top,
+  .bottom {
     display: flex;
     flex-basis: 50%;
     justify-content: space-between;
